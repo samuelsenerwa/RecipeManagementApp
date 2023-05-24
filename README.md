@@ -1,3 +1,3 @@
-# recipe_manager
+# Recipe_Management
 
 A new Flutter project.
