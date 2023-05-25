@@ -65,7 +65,6 @@ class _HomeState extends State<Home> {
           onTap: onItemTapped,
         ),
       ),
-      debugShowCheckedModeBanner: false,
     );
   }
 }
