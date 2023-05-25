@@ -125,9 +125,27 @@ class HomePage extends StatelessWidget {
                 prepTime: '20 mins',
                 cookTime: '15 mins',
               ),
-              //  RecipeCard(),
-              //   RecipeCard(),
-              //    RecipeCard(),
+              RecipeCard(
+                imgSrc:
+                    'https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=480&q=80',
+                title: 'Cake',
+                prepTime: '30 mins',
+                cookTime: '60 mins',
+              ),
+              RecipeCard(
+                imgSrc:
+                    'https://images.unsplash.com/photo-1555939594-58d7cb561ad1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80',
+                title: 'Meat',
+                prepTime: '20 mins',
+                cookTime: '45 mins',
+              ),
+              RecipeCard(
+                imgSrc:
+                    'https://images.unsplash.com/photo-1497034825429-c343d7c6a68f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80',
+                title: 'Icecream',
+                prepTime: '20 mins',
+                cookTime: '15 mins',
+              ),
             ],
           ),
         ),

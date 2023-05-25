@@ -19,26 +19,78 @@ class RecipeCard extends StatelessWidget {
       children: [
         Container(
           margin: const EdgeInsets.only(left: 20),
-          width: 120,
+          width: 170,
           child: Image.network(
             this.imgSrc,
+            fit: BoxFit.cover,
           ),
         ),
-        Container(
-          width: 160,
-          height: 90,
-          color: Colors.white,
-          padding: const EdgeInsets.only(left: 10),
-          child: Column(
-            children: [
-              Text(
-                this.title,
-                style: const TextStyle(
-                  fontSize: 18,
-                  fontWeight: FontWeight.w700,
+        Positioned(
+          bottom: 5,
+          right: 5,
+          child: Container(
+            width: 160,
+            height: 90,
+            color: Colors.white,
+            padding: const EdgeInsets.only(left: 10),
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  this.title,
+                  style: const TextStyle(
+                    fontSize: 18,
+                    fontWeight: FontWeight.w700,
+                  ),
                 ),
-              ),
-            ],
+                Text(
+                  '${this.prepTime} Prep Time',
+                  style: const TextStyle(
+                    fontSize: 12,
+                    fontWeight: FontWeight.w500,
+                    color: Colors.grey,
+                  ),
+                ),
+                Text(
+                  '${this.cookTime} Cook Time',
+                  style: const TextStyle(
+                    fontSize: 12,
+                    fontWeight: FontWeight.w500,
+                    color: Colors.grey,
+                  ),
+                ),
+                Row(
+                  children: [
+                    Icon(
+                      Icons.star,
+                      size: 20,
+                      color: Theme.of(context).primaryColor,
+                    ),
+                    Icon(
+                      Icons.star,
+                      size: 20,
+                      color: Theme.of(context).primaryColor,
+                    ),
+                    Icon(
+                      Icons.star,
+                      size: 20,
+                      color: Theme.of(context).primaryColor,
+                    ),
+                    Icon(
+                      Icons.star,
+                      size: 20,
+                      color: Theme.of(context).primaryColor,
+                    ),
+                    Icon(
+                      Icons.star,
+                      size: 20,
+                      color: Colors.grey.shade400,
+                    ),
+                  ],
+                )
+              ],
+            ),
           ),
         )
       ],
