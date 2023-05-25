@@ -1,12 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:recipe_manager/pages/category_page.dart';
 import 'package:recipe_manager/pages/home_page.dart';
 
 void main() {
-  runApp(const MainApp());
+  runApp(MainApp());
 }
 
 class MainApp extends StatelessWidget {
-  const MainApp({super.key});
+  // const MainApp({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -38,7 +39,7 @@ class _HomeState extends State<Home> {
   //creating list of widgets
   List<Widget> pages = <Widget>[
     HomePage(),
-    // CategoryPage(),
+    const CategoryPage(),
   ];
 
   @override
